@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Тест виджета SizeMaster</title>
+    <title>SizeMaster Test</title>
 </head>
 <body>
-    <h1>Проверка работы виджета на стороннем домене</h1>
-    <p>Если всё настроено верно, кнопка виджета появится ниже.</p>
+    <h1>Тестируем виджет</h1>
+    
+    <!-- Подключаем логику -->
+    <script src="https://asurpos.ru/size-widget.js" async></script>
 
-    <!-- Твой скрипт виджета -->
-    <!-- <script src="https://size-master.asurpos.ru" async></script> -->
-    <script src="https://size-master.asurpos.ru/size-widget.js" async></script>
-    <size-calculator-widget api-key="c1d2c1a584b54bd3954c17ec48df1752" color="#34f444ff"></size-calculator-widget>
+    <!-- Размещаем саму кнопку -->
+    <size-calculator-widget 
+        api-key="c1d2c1a584b54bd3954c17ec48df1752" 
+        color="#34f444ff">
+    </size-calculator-widget>
 </body>
 </html>
+
